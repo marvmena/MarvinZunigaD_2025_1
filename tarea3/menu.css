@@ -1,0 +1,145 @@
+
+
+.encabezado {
+  background-color: #070f18;
+  height: 350px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+.nav-logo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 20%;
+}
+
+header {
+    background-color: #070f18;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Banner */
+
+.banner {
+      position: relative;
+      background: url('imagenes/banner.jpg') center center / cover no-repeat;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+.banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); 
+      z-index: 1;
+    }
+
+.banner-content {
+      position: relative;
+      z-index: 2; 
+      text-align: center;
+    }
+
+    /* Informacion del evento */
+
+.eventoSection {
+  position: relative;
+  background: url('imagenes/banner2.jpg') center center / cover no-repeat;
+  height: 500px;
+  overflow: hidden;
+}
+
+.eventoSection .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.eventoSection .content {
+  position: relative;
+  z-index: 2; /* Asegura que el texto quede por encima de la capa oscura */
+}
+
+
+
+/* Sobre nosotros */
+
+.sobreNosotros .container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.sobreNosotros .col {
+  flex: 1 1 45%;
+  padding: 20px;
+  
+}
+
+.sobreNosotros .texto-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.sobreNosotros img.imagen-sobre-nosotros {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px; 
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+/* imagenes */
+
+.max-h-300 {
+  max-height: 300px;
+  object-fit: cover; /* opcional: recorta en vez de deformar */
+}
+
+.fotosGalería {
+    background-color: #070f18;
+    color: white;
+}
+
+footer {
+    background-color: #070f18;
+    clip-path: polygon(5% 1%,100% 0, 100% 100%, 0% 100%);
+}
+
+/* Postulá tu obra */
+
+.inscripcionForm {
+    background-color: #070f18;
+}
+
+.inscripcionForm .container {
+  max-width: 700px;
+  border: white solid;
+  padding: 90px;
+}
+
+/* Whatsapp */
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 9999;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
