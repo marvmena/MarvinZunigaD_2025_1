@@ -43,20 +43,21 @@ a {
 
 .nav {
   position: relative;
-  height: 5rem;
+  height: 4rem;
   display: flex;
-  justify-content: space-between;
-  padding: 65px;
+  justify-content: center;
+  padding: 55px;
   align-items: center;
   
 }
 
 .nav__logo {
   color: hsl(0, 0%, 100%);
+  margin-right: 20px;
 }
 
 .nav__logo img {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .nav__close,
@@ -95,6 +96,10 @@ a {
 
   .show-menu {
     left: 0;
+  }
+
+  .nav__toggle {
+    display: flex !important;
   }
 
   .nav__item {

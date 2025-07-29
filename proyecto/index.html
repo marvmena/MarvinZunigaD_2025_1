@@ -11,9 +11,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 
   <!-- Your custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/index.css">
 
-  <title>Responsive navbar - Bedimcode Bootstrap</title>
+  <!-- Favioon -->
+  <link rel="icon" href="/imagenes/logo.png" type="image/png">
+
+  <title>Casa Verde Food Truck</title>
 </head>
 <body>
   <!--==================== HEADER ====================-->
@@ -36,41 +40,41 @@
         <li class="nav-item nav__item">
           <a href="#" class="nav-link nav__link">
             <i class="ri-corner-down-right-line"></i>
-            <span>Home</span>
+            <span>Menú</span>
           </a>
         </li>
         <li class="nav-item nav__item">
           <a href="#" class="nav-link nav__link">
             <i class="ri-corner-down-right-line"></i>
-            <span>About Us</span>
+            <span>Plan Nutricional</span>
           </a>
         </li>
         <li class="nav-item nav__item">
           <a href="#" class="nav-link nav__link">
             <i class="ri-corner-down-right-line"></i>
-            <span>Projects</span>
+            <span>Nosotros</span>
           </a>
         </li>
         <li class="nav-item nav__item">
           <a href="#" class="nav-link nav__link">
             <i class="ri-corner-down-right-line"></i>
-            <span>Studio</span>
+            <span>Testimonios</span>
           </a>
         </li>
         <li class="nav-item nav__item">
           <a href="#" class="nav-link nav__link">
             <i class="ri-corner-down-right-line"></i>
-            <span>Contact</span>
+            <span>Feedback</span>
           </a>
         </li>
       </ul>
 
       <!-- Social links -->
       <div class="nav__social d-flex ms-lg-3">
-        <a href="https://www.instagram.com/" target="_blank" class="nav__social-link nav-link">
+        <a href="https://www.instagram.com/casaverde.cr/" target="_blank" class="nav__social-link nav-link">
           <i class="ri-instagram-line"></i>
         </a>
-        <a href="#" target="_blank" class="nav__social-link nav-link">
+        <a href="https://api.whatsapp.com/send/?phone=50686526888&text&type=phone_number&app_absent=0" target="_blank" class="nav__social-link nav-link">
           <i class="ri-whatsapp-line"></i>
         </a>
       </div>
@@ -78,10 +82,78 @@
   </nav>
 </header>
 
-  <!--==================== MAIN ====================-->
-  <main>
-    <!-- Insert page sections -->
-  </main>
+<!-- Banner -->
+
+<section>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/banner2.webp" class="d-block w-100" alt="Pan en proceso de ser horneado">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner3.webp" class="d-block w-100" alt="Ensalada con chipotle">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner4.webp" class="d-block w-100" alt="Sandwich porky de Casa Verde">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+
+<!-- Misión y Visión -->
+
+<section class="py-5 bg-white">
+  <div class="container-fluid text-center">
+    <h2 class="fw-bold display-6">Misión y visión</h2>
+    <p class="text-muted mb-5">Comida rápida saludable</p>
+
+    <div class="row g-4">
+      <!-- Visión -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="imagenes/vision.webp" class="card-img-top" alt="Visión">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Visión</h5>
+            <p class="card-text text-muted">
+              En Casa Verde, llevamos comida saludable y deliciosa directamente a los hogares de Guápiles, combinando ingredientes frescos, recetas nutritivas y un servicio cálido y confiable. Nuestra misión es hacer del bienestar una experiencia accesible, práctica y placentera para todos. Mientras crecemos hacia la apertura de nuestro restaurante físico, seguimos comprometidos con ofrecer excelencia, innovación y el cariño de nuestra gente en cada entrega.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Misión -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="imagenes/mision.webp" class="card-img-top" alt="Misión">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Misión</h5>
+            <p class="card-text text-muted">
+              Impactar positivamente en la sociedad ofreciendo comida saludable y consciente; con precios accesibles y calidad excepcional.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promesa de marca -->
+    </div>
+  </div>
+</section>
+
 
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
