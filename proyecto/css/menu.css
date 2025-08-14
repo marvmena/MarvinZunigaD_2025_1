@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 /*=============== BASE ===============*/
 * {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.938rem;
   background-color: hsl(0, 0%, 100%);
 }
@@ -79,6 +79,37 @@ a {
 .nav__social-link:hover {
   color: #D0EC9F;
 }
+
+/* PARA EL TAB */
+
+.nav__link:focus {
+  color: #D0EC9F;
+  outline: none;
+}
+
+.nav__link:focus span::after {
+  width: 100%;
+}
+
+.nav__link:focus span {
+  margin-left: 2.5rem;
+
+} 
+
+.nav__link:focus i {
+  opacity: 1;
+  visibility: visible;  
+}
+
+.nav__link:focus span::after {
+  width: 100%;
+}
+
+.nav__social-link:focus i {
+  color: #D0EC9F;
+  outline: none; 
+}
+
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {

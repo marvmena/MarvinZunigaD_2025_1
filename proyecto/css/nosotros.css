@@ -1,0 +1,24 @@
+.about-section{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+  background-color: #CFEC95; 
+  transition: all 0.3s ease; 
+  color: #17262D;
+}
+
+.btn:hover {
+  background-color: #b6d87e; 
+  transform: scale(1.03); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+  color: #17262D;
+}
+
+.menu_foodSection {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

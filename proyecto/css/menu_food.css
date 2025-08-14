@@ -1,0 +1,32 @@
+
+
+
+
+.menu_foodSection {
+    background-color: #17262D;
+    margin-top: 100px;
+}
+
+.card-fixed-width {
+  max-width: 450px;
+}
+
+.card img{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  cursor: pointer; 
+}
+
+

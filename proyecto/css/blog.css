@@ -1,0 +1,39 @@
+
+
+.bcvSection {
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.SectionContent img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;    
+}
+
+.SectionContent ul {
+  list-style: disc;     
+  padding-left: 1.5rem; 
+  margin-bottom: 1rem;   
+}
+
+.btn {
+  background-color: #CFEC95; 
+  transition: all 0.3s ease; 
+  color: #17262D;
+}
+
+.btn:hover {
+  background-color: #b6d87e; 
+  transform: scale(1.03); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+  color: #17262D;
+}
+
+.menu_foodSection {
+  max-width: 1000px;
+  margin: auto;
+}
+

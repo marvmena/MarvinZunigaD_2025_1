@@ -1,0 +1,27 @@
+
+
+.plan_nutricionalTitle {
+  background-color: #17262D;
+  margin-top: 100px;
+  color: whitesmoke;
+
+}
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    background-color: #17262D !important;
+    border: 2px solid #CFEC95 !important;
+    color: whitesmoke !important;
+    padding: 8px;
+    text-align: left;
+    
+  }
+
+  th {
+    background-color: #17262D !important;
+  }
+
