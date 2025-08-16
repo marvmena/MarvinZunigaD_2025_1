@@ -53,13 +53,13 @@
             </a>
           </li>
           <li class="nav-item nav__item">
-            <a href="#" class="nav-link nav__link" tabindex="0">
+            <a href="/nosotros.html" class="nav-link nav__link" tabindex="0">
               <i class="ri-corner-down-right-line"></i>
-              <span>Testimonios</span>
+              <span>Nosotros</span>
             </a>
           </li>
           <li class="nav-item nav__item">
-            <a href="#" class="nav-link nav__link" tabindex="0">
+            <a href="/feedback.html" class="nav-link nav__link" tabindex="0">
               <i class="ri-corner-down-right-line"></i>
               <span>Feedback</span>
             </a>
@@ -79,10 +79,41 @@
     </nav>
   </header>
 
+   <!-- Banner -->
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" tabindex="0" aria-label="Carrusel de imágenes">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" tabindex="0"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" tabindex="0"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" tabindex="0"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/banner2.webp" class="d-block w-100" alt="Pan en proceso de ser horneado">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/banner3.webp" class="d-block w-100" alt="Ensalada con chipotle">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/banner4.webp" class="d-block w-100" alt="Sandwich porky de Casa Verde">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" tabindex="0" aria-label="Imagen anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" tabindex="0" aria-label="Imagen siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
 <!--==================== SECCIÓN NOSOTROS ====================-->
-<section class="about-section py-5 mt-5">
+<section class="about-section py-5">
   <div class="container-fluid">
-    <div class="text-center mb-5 mt-5">
+    <div class="text-center mb-5 ">
       <h1 class="fw-bold" tabindex="0">Sobre Casa Verde</h1>
       <p class="text-muted" tabindex="0">Comida saludable, sabor auténtico, y compromiso con tu bienestar.</p>
     </div>
@@ -174,6 +205,27 @@
     </div>
   </div>
 </section>
+
+<footer class="footer text-white py-4">
+  <div class="container-fluid text-center">
+    <p class="mb-2 fw-bold">Casa Verde Food Truck</p>
+    <p class="mb-2">Comida saludable con sabor auténtico en Guápiles, Costa Rica</p>
+
+    <!-- Redes sociales -->
+    <div class="d-flex justify-content-center mb-3">
+      <a href="https://www.instagram.com/casaverde.cr/" target="_blank" class="text-white me-3" aria-label="Instagram Casa Verde">
+        <i class="ri-instagram-line ri-2x"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=50686526888" target="_blank" class="text-white me-3" aria-label="WhatsApp Casa Verde">
+        <i class="ri-whatsapp-line ri-2x"></i>
+      </a>
+    </div>
+
+    <!-- Derechos -->
+    <p class="small mb-0">&copy; 2025 Casa Verde. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
 
 
 

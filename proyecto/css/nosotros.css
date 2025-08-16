@@ -22,3 +22,108 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* BANNER */
+
+/* ===== Carrusel Casa Verde - Estilos ===== */
+#carouselExampleIndicators {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;            /* esquinas suaves */
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+/* Alto base y recorte de imagen para que no se deforme */
+#carouselExampleIndicators .carousel-item {
+  height: 520px;                  /* desktop */
+}
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* recorta sin deformar */
+  object-position: center;        /* centra el motivo */
+  display: block;
+}
+
+/* Indicadores (puntos) */
+#carouselExampleIndicators .carousel-indicators {
+  margin-bottom: 1rem;
+  gap: .5rem;
+}
+#carouselExampleIndicators .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background-color: rgba(255,255,255,.6);
+  border: 0;
+  transition: transform .2s ease, background-color .2s ease;
+}
+#carouselExampleIndicators .carousel-indicators .active {
+  background-color: #CFEC95;      /* verde claro de marca */
+  transform: scale(1.15);
+}
+
+/* Botones de navegación */
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next {
+  width: 3.25rem;                 /* zona clic grande */
+  background: rgba(0,0,0,.25);
+  transition: background .2s ease;
+}
+#carouselExampleIndicators .carousel-control-prev:hover,
+#carouselExampleIndicators .carousel-control-next:hover {
+  background: rgba(0,0,0,.4);
+}
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.5));
+}
+
+/* Foco visible (accesibilidad teclado) */
+#carouselExampleIndicators .carousel-control-prev:focus-visible,
+#carouselExampleIndicators .carousel-control-next:focus-visible,
+#carouselExampleIndicators .carousel-indicators [data-bs-target]:focus-visible {
+  outline: 3px solid #7ED957;     /* verde */
+  outline-offset: 3px;
+}
+
+/* Capa sutil para mejorar contraste del texto si agregas captions */
+#carouselExampleIndicators .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.28), rgba(0,0,0,.08) 45%, transparent 80%);
+  pointer-events: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1146px) {
+  #carouselExampleIndicators .carousel-item { height: 420px; }
+}
+@media (max-width: 768px) {
+  #carouselExampleIndicators .carousel-item { height: 320px; }
+  #carouselExampleIndicators {
+    border-radius: .75rem;
+  }
+}
+@media (max-width: 480px) {
+  #carouselExampleIndicators .carousel-item { height: 240px; }
+  #carouselExampleIndicators .carousel-indicators [data-bs-target] {
+    width: 10px; height: 10px;
+  }
+}
+
+/* Respeta preferencias de usuarios que reducen animaciones */
+@media (prefers-reduced-motion: reduce) {
+  #carouselExampleIndicators .carousel-item {
+    transition: none !important;
+  }
+  .carousel,
+  .carousel * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

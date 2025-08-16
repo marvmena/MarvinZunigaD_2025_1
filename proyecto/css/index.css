@@ -1,3 +1,78 @@
+/* Banner promo  */
+
+.promo-banner {
+    position: relative;
+    background: url('/imagenes/banner1.webp') no-repeat center center/cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  /* Oscurecer imagen para que resalte el texto */
+  .promo-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+  .promo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .promo-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .promo-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .btn-promo {
+    background: #CFEC95;
+    color: #17262D;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-promo:hover {
+    background: #CFEC95;
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .promo-banner {
+      height: 300px;
+      padding: 20px;
+    }
+
+    .promo-content h2 {
+      font-size: 2rem;
+    }
+
+    .promo-content p {
+      font-size: 1.1rem;
+    }
+  }
+
+
+
 /* banner */
 
 body {
@@ -51,11 +126,13 @@ body {
 }
 
 .misionyvision img {
-  max-height: 400px;
+  max-height: 300px;
+  object-fit: cover;
+  
 }
 
 .misionyvision .card {
-  max-width: 400px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -68,6 +145,12 @@ body {
 
 .testimonios .card {
   border: 8px solid #CFEC95 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonios .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 
@@ -111,4 +194,13 @@ body {
   background-color: #CFEC95; 
   color: #17262D;
   box-shadow: none; 
+}
+
+
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+  .promo-banner {
+    margin-top: 140px;
+  }
 }

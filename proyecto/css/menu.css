@@ -1,7 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
-/*=============== BASE ===============*/
+
+/* BASE */
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -123,6 +126,12 @@ a {
     padding: 6rem 3rem;
     transition: left 0.4s;
     z-index: 99;
+  }
+
+
+  .nav {
+    margin-bottom: 50px;
+    padding: 30px;
   }
 
   .show-menu {
@@ -258,6 +267,13 @@ a {
 }
 
 /*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 1146px) and (min-width: 992px) {
+  nav {
+    margin-top: 30px;
+  }
+}
+/*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (min-width: 1150px) {
   body {
@@ -283,4 +299,17 @@ a {
     flex-direction: row;
     gap: 3.5rem;
   }
+}
+
+
+footer {
+  background-color: #17262D;
+}
+
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0d6efd; /* Azul Bootstrap */
 }
